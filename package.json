@@ -1,0 +1,40 @@
+{
+  "name": "crmapi",
+  "version": "1.0.0",
+  "description": "A simple CRM api",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "nodemon": "^1.17.2"
+  },
+  "scripts": {
+    "start": "nodemon src/app.js --exec  \"npm run lint && node\"",
+    "lint": "eslint src/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wayn0/crmapi.git"
+  },
+  "keywords": [
+    "crm",
+    "api",
+    "backend"
+  ],
+  "author": "Wayne Oliver <info@wayneoliver.co.za>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wayn0/crmapi/issues"
+  },
+  "homepage": "https://github.com/Wayn0/crmapi#readme"
+}
