@@ -1,4 +1,3 @@
-console.log('Hello world!')
 const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
@@ -12,6 +11,12 @@ app.use(cors())
 app.get('/status', (req, res) => {
   res.send({
     message: 'hello world!'
+  })
+})
+
+app.post('/register', (req, res) => {
+  res.send({
+    message: 'Hello, ' + req.body.email + '! please note registration disabled!'
   })
 })
 
